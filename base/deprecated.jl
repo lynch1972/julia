@@ -1723,6 +1723,14 @@ end
 @deprecate_moved eigs "Arpack"
 @deprecate_moved svds "Arpack"
 
+# PR #...
+@deprecate reduce(op, v0, itr) reduce(op, itr; init = v0)
+@deprecate foldl(op, v0, itr) foldl(op, itr; init = v0)
+@deprecate foldr(op, v0, itr) foldr(op, itr; init = v0)
+@deprecate mapreduce(op, v0, itr) mapreduce(op, itr; init = v0)
+@deprecate mapfoldl(op, v0, itr) mapfoldl(op, itr; init = v0)
+@deprecate mapfoldr(op, v0, itr) mapfoldr(op, itr; init = v0)
+
 # END 0.7 deprecations
 
 # BEGIN 1.0 deprecations
